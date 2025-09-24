@@ -55,7 +55,7 @@ async def start(event):
     user_id = event.sender_id
     collection.update_one({"user_id": user_id}, {"$set": {"user_id": user_id}}, upsert=True)
     buttons = [
-        [Button.url("Join Channel", url="https://t.me/+Vtkx55uLT8sxNGE1")],
+        [Button.url("Join Channel", url="https://t.me/SRC2026_1")],
         [Button.url("Contact Me", url="https://t.me/Aspiranthelper836")],
     ]
     await aadi.send_file(
@@ -149,7 +149,7 @@ async def term_command(event):
     # Creating inline keyboard with buttons
     buttons = [
         [Button.url("Query?", url="https://t.me/ Aspiranthelper836"),
-         Button.url("Channel", url="https://t.me/+Vtkx55uLT8sxNGE1")]
+         Button.url("Channel", url="https://t.me/SRC2026_1")]
     ]
 
     # Sending photo with caption and buttons
@@ -247,7 +247,7 @@ async def youtube_dl_command(_, message):
 
             # Get video metadata
             metadata = video_metadata(original_file)
-            caption = f"{video_info['title']}\n\n__**Powered by [Advance Content Saver Bot](https://t.me/+Vtkx55uLT8sxNGE1)**__"  # Set caption to the title of the video
+            caption = f"{video_info['title']}\n\n__**Powered by [Advance Content Saver Bot](https://t.me/SRC2026_1)**__"  # Set caption to the title of the video
             
             # Send the video file and thumbnail
             aadi = message.chat.id
@@ -282,4 +282,5 @@ def video_metadata(file):
     frame_count = vcap.get(cv2.CAP_PROP_FRAME_COUNT)
     duration = round(frame_count / fps)
     return {'width': width, 'height': height, 'duration': duration}
+
 
