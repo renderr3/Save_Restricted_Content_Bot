@@ -71,7 +71,7 @@ async def speedtest(event):
 ├ <b>Country:</b> <code>{result['client']['country']}</code>
 ├ <b>ISP:</b> <code>{result['client']['isp']}</code>
 ├ <b>ISP Rating:</b> <code>{result['client']['isprating']}</code>
-╰ <b>Powered by ADARSH</b> 
+╰ <b>Powered by Ezhil</b> 
 '''
     try:
         await event.reply(string_speed,file=path,parse_mode='html')
@@ -88,4 +88,5 @@ def speed_convert(size, byte=True):
     while size > power:
         size /= power
         zero += 1
+
     return f"{round(size, 2)} {units[zero]}"
